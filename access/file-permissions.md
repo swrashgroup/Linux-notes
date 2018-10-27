@@ -1,5 +1,6 @@
 # File Permissions
 
+
 As we learned previously, files have different permissions or file modes. Let's look at an example:
 
 <pre>$ ls -l Desktop/
@@ -21,3 +22,4 @@ Each character represent a different permission:
 </ul>
 
 So in the above example, we see that the user pete has read, write and execute permissions on the file. The group penguins has read and execute permissions. And finally, the other users (everyone else) has read and execute permissions. 
+

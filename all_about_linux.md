@@ -93,7 +93,7 @@ When managing users on a Linux system there are three key files that contain all
     * `home directory`
         * **NOTE:** Some users in the `/etc/passwd` file have the `/sbin/nologin` path as their home directory
     * `shell` - what shell a session will invoke
-    * [https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/]()
+    
 * `/etc/shadow` - File that stores all encrypted user passwords and any password related requirments for that user including:
     * `username` - username for password entry
     * `password` - hashed password in the format *`$id$salt$hashed`*
@@ -105,15 +105,13 @@ When managing users on a Linux system there are three key files that contain all
     * `inactive` - number of days after password expires before account is disabled
     * `expire` - days that account has been disabled
     * `!` or `!!` - shows that the user cannot login, default after user is created if no password is set with `useradd`
-    * [https://www.cyberciti.biz/faq/understanding-etcshadow-file/]()
-
+    
 * `/etc/group` - File used to manage all groups and users within them including:
     * `group name` - name of group
     * `password` - usually has an `x`, not used often
     * `group id (gid)` - unique group identifier
     * `group list` - names of the users currently part of that group
-    * [https://www.cyberciti.biz/faq/understanding-etcgroup-file/]()
-
+    
 * `whoami` - shows the current user 
 * `who` - shows all users logged into the system
 * `id` - show detailed information on owner of current process including:
@@ -222,33 +220,3 @@ When managing users on a Linux system there are three key files that contain all
 * `screen` - Utility to keep terminal session alive when closing a terminal session or logging out of a server
 * `tmux` - Similar utility to `screen` with many additional features (preferred)
 
-### VIM (VI Improved)
-  - insert mode
-  - visual select
-  - text operations
-  - swap characters forward (xp)
-  - swap characters backward (Xp)
-     - http://vim.wikia.com/wiki/Swapping_characters,_words_and_lines
-  - vimtutor
-  - buffers
-  - set numbers
-  - open other files
-  - executing commands in vim
-
-#### Optional
-* `sort`
-    * `- k` (column to sort on)
-* `uniq`
-  * `-c` ()
-* `strings`
-* `base64`
-* `shasum -a 256`
-* `tar (compression)`
-* `gzip`
-* `tr`
-* `awk (ADVANCED)`
-* `sed (ADVANCED)`
-
-### Resources
-- Vim Tips - [http://vim.wikia.com/wiki/Vim_Tips_Wiki]()
-- TL;DR man pages- [https://github.com/tldr-pages/tldr]()

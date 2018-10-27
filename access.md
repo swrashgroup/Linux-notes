@@ -1,7 +1,5 @@
 # File Permissions
 
-## Lesson Content
-
 As we learned previously, files have different permissions or file modes. Let's look at an example:
 
 <pre>$ ls -l Desktop/
